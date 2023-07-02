@@ -1,0 +1,138 @@
+.animate-bottom {
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.99);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsing {
+  animation: pulse 3s infinite;
+  background-image: url("assets/test2.png");
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.legend-row {
+    border: none;
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    background-image: url(assets/test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ff259e;
+}
+
+.team-row pulsing{
+    background-image: url("assets/test2.png");
+}
+
+.team-row {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    width: 450px;
+    height: 45px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.dead-row {
+    filter: grayscale(100%);
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.team-row:not(.dead-row):hover {
+    filter: grayscale(0%);
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.legend-name{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 24 px;
+    text-shadow: 1px 1px 2px black;
+    text-align: auto;
+    padding-right: 50px;
+}
+
+.legend-pts{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    padding-right: 5px;
+}
+
+.legend-status{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.team-pts{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.team-rank{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    text-align: right;
+    padding: auto;
+    padding-left: 10px;
+}
+
+.team-name{
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+    width: 280px;
+}
+
+
+.team-status{
+    height: 40px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
