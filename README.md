@@ -1,6 +1,6 @@
-**## PUBGm Tower V1 ##**
+## PUBGm Tower V1 ##
 
-**Description**:\
+**Description**:
 The Real-Time Damage Tracker is a web application built using the Dash framework. It fetches data from two API endpoints to get information about teams and players in a gaming competition. The application displays a table of the teams' real-time damage data. The table is periodically updated based on the live state data obtained from the APIs. The teams are sorted based on the number of players alive and their kill count. The application provides visual cues for the team's status, such as whether they are alive, knocked, or eliminated. The table includes team logos, team names, kill counts, and the status of each player.
 
 **Features:**
